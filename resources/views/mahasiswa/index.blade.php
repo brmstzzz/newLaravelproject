@@ -22,26 +22,31 @@
                             </thead>
 
                             <tbody>
-                                @for ($i = 0; $i < 100; $i++)
-                                    @foreach ($mahasiswa as $index => $mhs)
-                                        <tr>
-                                            <td>{{ $i * count($mahasiswa) + $index + 1 }}</td>
-                                            <td>
-                                                {{ $mhs['nim'] }} <br>
-                                                {{ $mhs['nama'] }}
-                                            </td>
-                                            <td>
-                                                {{ $mhs['tempat'] }}, {{ $mhs['tanggal'] }} <br>
-                                                {{ $mhs['jk'] }}
-                                            </td>
-                                            <td>{{ $mhs['prodi'] }}</td>
-                                            <td>
-                                                <button class="btn btn-primary btn-sm">Edit</button>
-                                                <button class="btn btn-danger btn-sm">Hapus</button>
-                                            </td>
-                                        </tr>
-                                    @endforeach
-                                @endfor
+                                @foreach ($mahasiswa as $index => $mhs)
+                                    <tr>
+                                        <td>{{ $index + 1 }}</td>
+
+                                        <td>
+                                            {{ $mhs->nim }} <br>
+                                            {{ $mhs->nama }}
+                                        </td>
+
+                                        <td>
+                                            {{ $mhs->tempat_lahir }}, {{ $mhs->tgl_lahir }} <br>
+                                            {{ $mhs->jenis_kelamin }}
+                                        </td>
+
+                                        <td>
+                                            {{ $mhs->programStudi->nama_prodi ?? '-' }} <br>
+                                            <small>{{ $mhs->programStudi->fakultas ?? '-' }}</small>
+                                        </td>
+
+                                        <td>
+                                            <button class="btn btn-primary btn-sm">Edit</button>
+                                            <button class="btn btn-danger btn-sm">Hapus</button>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
 
                         </table>

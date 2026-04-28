@@ -37,8 +37,8 @@
                                         </td>
 
                                         <td>
-                                            {{ $mhs->programStudi->nama_prodi ?? '-' }} <br>
-                                            <small>{{ $mhs->programStudi->fakultas ?? '-' }}</small>
+                                            {{ $mhs->programStudi->fakultas ?? '-' }} <br>
+                                            {{ $mhs->programStudi->nama_prodi ?? '-' }}
                                         </td>
 
                                         <td>

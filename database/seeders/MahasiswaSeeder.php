@@ -12,12 +12,28 @@ class MahasiswaSeeder extends Seeder
     {
         $data = [
             [
+                'nim' => 'G.131.25.0078',
+                'nama' => 'Leon S junaidi',
+                'tempat' => 'Jepara',
+                'tanggal' => '2005-07-13',
+                'jk' => 'Laki-Laki',
+                'prodi' => 'S1 Akuntansi'
+            ],
+            [
                 'nim' => 'G.131.25.0095',
                 'nama' => 'Raya Sumaryao',
                 'tempat' => 'Semarang',
                 'tanggal' => '2005-05-24',
                 'jk' => 'Perempuan',
                 'prodi' => 'S1 Teknik Informatika'
+            ],
+            [
+                'nim' => 'G.131.25.0081',
+                'nama' => 'Midwntrrr simajumpang',
+                'tempat' => 'Demak',
+                'tanggal' => '2004-08-15',
+                'jk' => 'Laki-Laki',
+                'prodi' => 'S1 Manajemen'
             ],
             [
                 'nim' => 'G.131.25.0055',
@@ -34,22 +50,6 @@ class MahasiswaSeeder extends Seeder
                 'tanggal' => '2005-02-11',
                 'jk' => 'Laki-Laki',
                 'prodi' => 'S1 Teknik Sipil'
-            ],
-            [
-                'nim' => 'G.131.25.0078',
-                'nama' => 'Leon S junaidi',
-                'tempat' => 'Jepara',
-                'tanggal' => '2005-07-13',
-                'jk' => 'Laki-Laki',
-                'prodi' => 'S1 Akuntansi'
-            ],
-            [
-                'nim' => 'G.131.25.0081',
-                'nama' => 'Midwntrrr simajumpang',
-                'tempat' => 'Demak',
-                'tanggal' => '2004-08-15',
-                'jk' => 'Laki-Laki',
-                'prodi' => 'S1 Manajemen'
             ],
         ];
 

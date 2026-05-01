@@ -87,7 +87,7 @@
                 <ul class="metismenu" id="menu">
                     <li>
                         <a href="/dashboard" aria-expanded="false">
-                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span> 
+                            <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
                         </a>
                     </li>
 
@@ -148,6 +148,16 @@
     <script src="{{ asset('assets/plugins/tables/js/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('assets/plugins/tables/js/datatable/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('assets/plugins/tables/js/datatable-init/datatable-basic.min.js') }}"></script>
+    <script>
+        setTimeout(function () {
+            let alert = document.getElementById('alert-success');
+            if (alert) {
+                alert.style.transition = "opacity 0.5s ease";
+                alert.style.opacity = "0";
+                setTimeout(() => alert.remove(), 500);
+            }
+        }, 3000); // 3 detik
+    </script>
 
 </body>
 

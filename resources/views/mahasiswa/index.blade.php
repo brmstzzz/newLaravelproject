@@ -6,10 +6,9 @@
             <div class="card">
                 <div class="card-body">
 
-                    <h4 class="card-title">Data Mahasiswa</h4 <div class="table-responsive">
                     <div class="card-header d-flex justify-content-between align-items-center">
                         <h4 class="card-tittle">{{ $master['title'] }}</h4>
-                        <a href="{{ route('mahasiswa.create') }}" class="btn btn-primary btn-md">
+                        <a href="{{ route('mahasiswa.create') }}" class="btn btn-primary btn-sm">
                             <i class="fa fa-plus"></i> Tambah
                         </a>
                     </div>

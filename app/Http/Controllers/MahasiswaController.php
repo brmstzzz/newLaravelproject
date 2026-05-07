@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use App\Models\Mahasiswa;
 use App\Models\ProgramStudi;
@@ -10,7 +11,7 @@ class MahasiswaController extends Controller
 {
     public function index()
     {
-        $mahasiswa = Mahasiswa::with('programStudi')->get();
+        $mahasiswa = Mahasiswa::with('programStudi')->latest('id')->get();
 
         $master = [
             'title' => 'Data Mahasiswa'
